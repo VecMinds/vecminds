@@ -70,7 +70,8 @@
         }
 
         #header-inner-container {
-            transition: all 0.3s ease-in-out;
+            /* Added transition for max-width */
+            transition: all 0.3s ease-in-out, max-width 0.4s ease-in-out;
         }
 
         #main-header.scrolled {
@@ -86,6 +87,11 @@
             border-radius: 9999px;
             box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.07), 0 4px 6px -4px rgb(0 0 0 / 0.1);
             border: 1px solid #e5e7eb;
+            
+            /* This shrinks the nav bar on scroll to bring content closer */
+            max-width: 48rem; /* Equivalent to Tailwind's max-w-3xl*/
+            margin-left: auto;
+            margin-right: auto;
         }
         
         /* Custom Calendly Popup Styles */
@@ -100,7 +106,7 @@
     <!-- Header & Navigation -->
     <header id="main-header" class="w-full z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div id="header-inner-container" class="px-4">
+            <div id="header-inner-container" class="px-4 max-w-3xl">
                 <div class="flex justify-between items-center h-14">
                     <div class="flex-shrink-0">
                         <a href="#hero" class="text-2xl font-bold text-slate-900 flex items-center gap-2">
