@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vecminds Technologies | Agile Minds. Relentless Solutions.</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -86,6 +87,12 @@
             box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.07), 0 4px 6px -4px rgb(0 0 0 / 0.1);
             border: 1px solid #e5e7eb;
         }
+        
+        /* Custom Calendly Popup Styles */
+        .calendly-popup-content {
+            border-radius: 0.75rem !important; /* Corresponds to Tailwind's rounded-xl */
+            overflow: hidden !important;
+        }
     </style>
 </head>
 <body class="text-slate-800">
@@ -96,7 +103,10 @@
             <div id="header-inner-container" class="px-4">
                 <div class="flex justify-between items-center h-14">
                     <div class="flex-shrink-0">
-                        <a href="#hero" class="text-2xl font-bold text-slate-900">Vecminds<span class="text-blue-600">.</span></a>
+                        <a href="#hero" class="text-2xl font-bold text-slate-900 flex items-center gap-2">
+                            <img src="assets/images/Vecminds_Logo.png" alt="Vecminds Logo" title="Vecminds Technologies" class="h-12">
+                            <!-- Vecminds -->
+                        </a>
                     </div>
                     <nav class="hidden md:flex items-center space-x-8">
                         <a href="#services" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">Services</a>
@@ -135,9 +145,17 @@
 
     <main>
         <!-- HERO SECTION -->
-        <section id="hero" class="relative bg-white min-h-screen flex items-center justify-center">
-            <div class="absolute inset-x-0 top-0 h-1/2 bg-slate-50 -z-10"></div>
-            <div class="max-w-4xl mx-auto text-center px-4">
+        <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+            <!-- Background Elements -->
+            <div class="absolute inset-0 z-0 bg-slate-50">
+                <!-- Subtle grid pattern -->
+                <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3csvg_xmlns=%22http://www.w3.org/2000/svg%22_viewBox=%220_0_32_32%22_width=%2232%22_height=%2232%22_fill=%22none%22_stroke=%22%23cbd5e1%22%3e%3cpath_d=%22M0_.5H32V32%22/%3e%3c/svg%3e')]" style="opacity: 0.5;"></div>
+            </div>
+            <!-- Vignette effect -->
+            <div class="absolute inset-0 z-1 bg-[radial-gradient(ellipse_at_center,transparent_40%,#f8fafc_95%)]"></div>
+        
+            <!-- Content -->
+            <div class="relative z-10 max-w-4xl mx-auto text-center px-4">
                 <p class="text-blue-600 font-semibold mb-3">Agile Minds. Relentless Solutions.</p>
                 <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-slate-900 tracking-tighter">
                     We Build <span class="gradient-text">AI-Native</span> Software, Fast.
@@ -157,7 +175,7 @@
         </section>
 
         <!-- WHO WE HELP -->
-        <section id="who-we-help" class="section-padding bg-slate-50">
+        <section id="who-we-help" class="section-padding bg-white">
             <div class="max-w-6xl mx-auto">
                 <div class="text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Who We Partner With</h2>
@@ -165,25 +183,25 @@
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <!-- Persona 1 -->
-                    <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+                    <div class="bg-slate-50 p-8 rounded-xl shadow-sm border border-slate-200 hover:bg-white transition-colors">
                         <i data-lucide="rocket" class="w-10 h-10 text-blue-600 mb-4"></i>
                         <h3 class="font-bold text-lg text-slate-900">Early-Stage Founders</h3>
                         <p class="text-slate-600 mt-2">Launch your AI-native MVP in weeks, not months.</p>
                     </div>
                     <!-- Persona 2 -->
-                    <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+                    <div class="bg-slate-50 p-8 rounded-xl shadow-sm border border-slate-200 hover:bg-white transition-colors">
                         <i data-lucide="bot" class="w-10 h-10 text-blue-600 mb-4"></i>
                         <h3 class="font-bold text-lg text-slate-900">Digital & Ops Teams</h3>
                         <p class="text-slate-600 mt-2">Automate internal processes with intelligent agents.</p>
                     </div>
                     <!-- Persona 3 -->
-                    <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+                    <div class="bg-slate-50 p-8 rounded-xl shadow-sm border border-slate-200 hover:bg-white transition-colors">
                         <i data-lucide="building-2" class="w-10 h-10 text-blue-600 mb-4"></i>
                         <h3 class="font-bold text-lg text-slate-900">Innovation Leaders</h3>
                         <p class="text-slate-600 mt-2">Fast-track AI transformation inside your org.</p>
                     </div>
                     <!-- Persona 4 -->
-                    <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+                    <div class="bg-slate-50 p-8 rounded-xl shadow-sm border border-slate-200 hover:bg-white transition-colors">
                         <i data-lucide="code-2" class="w-10 h-10 text-blue-600 mb-4"></i>
                         <h3 class="font-bold text-lg text-slate-900">CTOs & Tech Leads</h3>
                         <p class="text-slate-600 mt-2">Accelerate product shipping with expert engineering.</p>
@@ -193,7 +211,7 @@
         </section>
 
         <!-- WHAT WE DO -->
-        <section id="services" class="section-padding bg-white">
+        <section id="services" class="section-padding bg-slate-50">
             <div class="max-w-6xl mx-auto">
                 <div class="text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold text-slate-900">What We Do</h2>
@@ -201,7 +219,7 @@
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Service Card 1 -->
-                    <div class="base-card group bg-slate-50 p-8 rounded-xl border border-transparent transition-all duration-300 hover:shadow-lg hover:bg-white">
+                    <div class="base-card group bg-white p-8 rounded-xl border border-transparent transition-all duration-300 hover:shadow-lg">
                         <div class="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-lg transition-all duration-300 group-hover:bg-blue-600 group-hover:scale-110">
                             <i data-lucide="layout-template" class="w-6 h-6 text-blue-600 transition-all duration-300 group-hover:text-white"></i>
                         </div>
@@ -209,7 +227,7 @@
                         <p class="text-slate-600">High-quality, maintainable apps built for your specific use case.</p>
                     </div>
                     <!-- Service Card 2 -->
-                    <div class="base-card group bg-slate-50 p-8 rounded-xl border border-transparent transition-all duration-300 hover:shadow-lg hover:bg-white">
+                    <div class="base-card group bg-white p-8 rounded-xl border border-transparent transition-all duration-300 hover:shadow-lg">
                         <div class="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-lg transition-all duration-300 group-hover:bg-blue-600 group-hover:scale-110">
                             <i data-lucide="layers" class="w-6 h-6 text-blue-600 transition-all duration-300 group-hover:text-white"></i>
                         </div>
@@ -217,7 +235,7 @@
                         <p class="text-slate-600">End-to-end SaaS platforms optimized for AI-native functionality.</p>
                     </div>
                     <!-- Service Card 3 -->
-                    <div class="base-card group bg-slate-50 p-8 rounded-xl border border-transparent transition-all duration-300 hover:shadow-lg hover:bg-white">
+                    <div class="base-card group bg-white p-8 rounded-xl border border-transparent transition-all duration-300 hover:shadow-lg">
                         <div class="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-lg transition-all duration-300 group-hover:bg-blue-600 group-hover:scale-110">
                             <i data-lucide="bot" class="w-6 h-6 text-blue-600 transition-all duration-300 group-hover:text-white"></i>
                         </div>
@@ -225,15 +243,15 @@
                         <p class="text-slate-600">Slackbots, workflows, and task agents tailored to your operations.</p>
                     </div>
                     <!-- Service Card 4 -->
-                    <div class="base-card group bg-slate-50 p-8 rounded-xl border border-transparent transition-all duration-300 hover:shadow-lg hover:bg-white">
+                    <div class="base-card group bg-white p-8 rounded-xl border border-transparent transition-all duration-300 hover:shadow-lg">
                         <div class="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-lg transition-all duration-300 group-hover:bg-blue-600 group-hover:scale-110">
                             <i data-lucide="brain-circuit" class="w-6 h-6 text-blue-600 transition-all duration-300 group-hover:text-white"></i>
                         </div>
                         <h3 class="font-semibold text-xl text-slate-900 mt-5 mb-2">AI-Native Software Engineering</h3>
-                        <p class="text-slate-600">We don't just add AI. We build software around it.</p>
+                        <p class="text-slate-600">We don’t just add AI. We build software around it.</p>
                     </div>
                     <!-- Service Card 5 -->
-                    <div class="base-card group bg-slate-50 p-8 rounded-xl border border-transparent transition-all duration-300 hover:shadow-lg hover:bg-white md:col-span-2 lg:col-span-2">
+                    <div class="base-card group bg-white p-8 rounded-xl border border-transparent transition-all duration-300 hover:shadow-lg md:col-span-2 lg:col-span-2">
                         <div class="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-lg transition-all duration-300 group-hover:bg-blue-600 group-hover:scale-110">
                             <i data-lucide="lightbulb" class="w-6 h-6 text-blue-600 transition-all duration-300 group-hover:text-white"></i>
                         </div>
@@ -245,7 +263,7 @@
         </section>
 
         <!-- WHY VECMINDS -->
-        <section id="why-us" class="section-padding bg-slate-50">
+        <section id="why-us" class="section-padding bg-white">
             <div class="max-w-5xl mx-auto">
                 <div class="text-center mb-20">
                     <h2 class="text-3xl md:text-4xl font-bold text-slate-900">The Vecminds Difference</h2>
@@ -298,7 +316,7 @@
         </section>
 
         <!-- OUR APPROACH -->
-        <section id="process" class="section-padding bg-white">
+        <section id="process" class="section-padding bg-slate-50">
             <div class="max-w-4xl mx-auto">
                 <div class="text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Our 4-Stage Build Process</h2>
@@ -359,7 +377,7 @@
         </section>
 
         <!-- CASE STUDIES / FEATURED PROJECTS -->
-        <section id="projects" class="section-padding bg-slate-50">
+        <section id="projects" class="section-padding bg-white">
             <div class="max-w-6xl mx-auto">
                 <div class="text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Featured Projects</h2>
@@ -367,7 +385,7 @@
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Project Card 1 -->
-                    <div class="base-card project-card bg-white rounded-xl shadow-md border border-slate-200">
+                    <div class="base-card project-card bg-slate-50 rounded-xl shadow-md border border-slate-200 hover:bg-white">
                         <img src="https://placehold.co/600x400/0f172a/3b82f6?text=Slack+AI+Agent" alt="Abstract AI graphic for Slack Agent" class="w-full h-48 object-cover">
                         <div class="p-6">
                             <h3 class="font-bold text-xl text-slate-900">Slack AI Agent</h3>
@@ -375,7 +393,7 @@
                         </div>
                     </div>
                     <!-- Project Card 2 -->
-                    <div class="base-card project-card bg-white rounded-xl shadow-md border border-slate-200">
+                    <div class="base-card project-card bg-slate-50 rounded-xl shadow-md border border-slate-200 hover:bg-white">
                         <img src="https://placehold.co/600x400/0f172a/6d28d9?text=Fintech+MVP" alt="Abstract AI graphic for Fintech MVP" class="w-full h-48 object-cover">
                         <div class="p-6">
                             <h3 class="font-bold text-xl text-slate-900">Fintech MVP</h3>
@@ -383,7 +401,7 @@
                         </div>
                     </div>
                     <!-- Project Card 3 -->
-                    <div class="base-card project-card bg-white rounded-xl shadow-md border border-slate-200">
+                    <div class="base-card project-card bg-slate-50 rounded-xl shadow-md border border-slate-200 hover:bg-white">
                         <img src="https://placehold.co/600x400/0f172a/db2777?text=Notion+Assistant" alt="Abstract AI graphic for Notion Assistant" class="w-full h-48 object-cover">
                         <div class="p-6">
                             <h3 class="font-bold text-xl text-slate-900">Notion → GPT Assistant</h3>
@@ -395,7 +413,7 @@
         </section>
         
         <!-- TECH STACK -->
-        <section id="tech-stack" class="section-padding bg-white">
+        <section id="tech-stack" class="section-padding bg-slate-50">
             <div class="max-w-6xl mx-auto">
                 <div class="text-center">
                     <h2 class="text-base font-semibold text-slate-600 tracking-wider uppercase">We work with the most proven AI-native stack</h2>
@@ -487,7 +505,7 @@
         <section id="contact" class="bg-blue-700">
             <div class="max-w-4xl mx-auto text-center section-padding">
                 <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight">
-                    Let's Build Your AI-Native System.
+                    Let’s Build Your AI-Native System.
                 </h2>
                 <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/vecminds/vecminds-1-1'});return false;" class="mt-8 inline-block bg-white text-blue-700 font-bold px-8 py-4 rounded-full shadow-xl hover:bg-slate-100 transition-all transform hover:scale-105">
                     Book Your Free Strategy Call
@@ -499,7 +517,7 @@
         <!-- ABOUT US (in footer) -->
         <section id="about" class="section-padding bg-slate-900 text-white">
              <div class="max-w-4xl mx-auto text-center">
-                <h3 class="text-2xl font-bold">We're engineers, not consultants.</h3>
+                <h3 class="text-2xl font-bold">We’re engineers, not consultants.</h3>
                 <p class="mt-4 text-lg text-slate-400 max-w-2xl mx-auto">
                     We build software with grit, speed, and clarity. Vecminds was founded by a tech operator who believes the future of software is intelligent, custom, and fast.
                 </p>
