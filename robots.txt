@@ -1,0 +1,8 @@
+# www.robotstxt.org/
+
+# Allow all user agents to crawl the site.
+User-agent: *
+Allow: /
+
+# Sitemap file location
+Sitemap: https://www.vecminds.com/sitemap.xml
