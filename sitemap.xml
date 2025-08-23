@@ -4,8 +4,7 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Gemini -->
-
+      
 <url>
   <loc>https://www.vecminds.com/</loc>
   <lastmod>2025-08-16T02:12:15+00:00</lastmod>
@@ -38,4 +37,10 @@
 </url>
 
 
+<url>
+  <loc>https://www.vecminds.com/product-labs.html</loc>
+  <lastmod>2025-08-23T15:27:00+05:45</lastmod>
+  <priority>0.80</priority>
+</url>
+      
 </urlset>
