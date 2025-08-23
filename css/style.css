@@ -1,0 +1,150 @@
+/* ========================================
+   VECMINDS TECHNOLOGIES - CENTRALIZED STYLES
+   ======================================== */
+
+/* ========================================
+   BASE STYLES
+   ======================================== */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+.gradient-text {
+    background: linear-gradient(to right, #3b82f6, #1d4ed8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-padding {
+    padding: 6rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .section-padding {
+        padding: 8rem 2rem;
+    }
+}
+
+/* ========================================
+   CARD COMPONENTS
+   ======================================== */
+.base-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.base-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.project-card {
+    overflow: hidden;
+}
+
+.project-card img {
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+/* ========================================
+   TECH LOGO COMPONENTS
+   ======================================== */
+.tech-logo {
+    transition: all 0.3s ease;
+}
+
+.tech-logo img {
+    filter: grayscale(100%) opacity(60%);
+    transition: all 0.3s ease;
+}
+
+.tech-logo:hover img {
+    filter: grayscale(0%) opacity(100%);
+    transform: scale(1.1);
+}
+
+/* ========================================
+   HEADER & NAVIGATION
+   ======================================== */
+#main-header {
+    position: absolute;
+    top: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    transition: top 0.4s ease-in-out, padding 0.3s ease-in-out;
+}
+
+#header-inner-container {
+    transition: all 0.3s ease-in-out, max-width 0.4s ease-in-out;
+}
+
+#main-header.scrolled {
+    position: fixed;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+#main-header.scrolled #header-inner-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 9999px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.07), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    border: 1px solid #e5e7eb;
+    max-width: 48rem; /* Equivalent to Tailwind's max-w-3xl */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ========================================
+   HERO BACKGROUND
+   ======================================== */
+#hero-background {
+    background-image: radial-gradient(ellipse 80% 70% at 50% 50%, hsla(210, 100%, 90%, 0.5), transparent);
+    filter: blur(40px);
+    transform: scale(1.5);
+}
+
+/* ========================================
+   ACCORDION COMPONENTS
+   ======================================== */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.accordion-button svg {
+    transition: transform 0.3s ease;
+}
+
+.accordion-button.active svg {
+    transform: rotate(180deg);
+}
+
+/* ========================================
+   THIRD-PARTY INTEGRATIONS
+   ======================================== */
+/* Custom Calendly Popup Styles */
+.calendly-popup-content {
+    border-radius: 0.75rem !important; /* Corresponds to Tailwind's rounded-xl */
+    overflow: hidden !important;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+@media (max-width: 768px) {
+    /* Mobile-specific styles can be added here */
+}
+
+@media (min-width: 1024px) {
+    /* Desktop-specific styles can be added here */
+}
