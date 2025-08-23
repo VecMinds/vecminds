@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Labs | Vecminds Technologies</title>
+    
+    <!-- SEO Meta Description -->
+    <meta name="description" content="Vecminds Technologies builds AI-native software, fast. From MVPs to internal AI agents, we help startups and digital teams ship intelligent, custom software with speed and purpose.">
+    <meta name="keywords" content="AI software development, custom software, AI agents, MVP development, SaaS engineering, Software, Agentic AI, Ethical AI, AI transformation">
+
+    <!-- Social Media Meta Tags (Open Graph & Twitter) -->
+    <meta property="og:title" content="Vecminds Technologies | Agile Minds. Relentless Solutions.">
+    <meta property="og:description" content="We build AI-native software, fast. From MVPs to internal AI agents, we help startups ship intelligent software with speed and purpose.">
+    <meta property="og:image" content="https://www.vecminds.com/assets/images/Vecminds_Technologies.webp">
+    <meta property="og:url" content="https://www.vecminds.com">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vecminds Technologies | Agile Minds. Relentless Solutions.">
+    <meta name="twitter:description" content="We build AI-native software, fast. From MVPs to internal AI agents, we help startups ship intelligent software with speed and purpose.">
+    <meta name="twitter:image" content="https://www.vecminds.com/assets/images/Vecminds_Technologies.webp">
+
+    <!-- Structured Data (JSON-LD) -->
+
+
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <!-- Calendly link widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <!-- Calendly link widget end -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3VPTT945Y7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3VPTT945Y7');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GT-MK9LZ4VV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Centralized CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-slate-800">
+
+    <!-- Header & Navigation -->
+    <header id="main-header" class="w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div id="header-inner-container" class="px-4">
+                <div class="flex justify-between items-center h-14">
+                    <div class="flex-shrink-0">
+                        <a href="index.html#hero" class="text-2xl font-bold text-slate-900 flex items-center gap-2">
+                            <img src="assets/images/Vecminds_Logo.png" alt="Vecminds Logo" title="Vecminds Technologies" class="h-12">
+                            <!-- Vecminds -->
+                        </a>
+                    </div>
+                    <nav class="hidden md:flex items-center space-x-8">
+                        <!-- Update hrefs to point to the main page (e.g., index.html) -->
+                        <a href="index.html#services" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">Services</a>
+                        <a href="/product-labs.html" class="text-sm font-bold text-blue-600 transition-colors">AI Product Labs</a>
+                        <a href="index.html#why-us" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">Why Us</a>
+                        <a href="index.html#projects" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">Projects</a>
+                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/vecminds/vecminds-1-1'});return false;" class="bg-slate-900 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-slate-700 transition-colors">Book a Call</a>
+                    </nav>
+                    <!-- Mobile Menu Button -->
+                    <div class="md:hidden">
+                        <button id="menu-toggle" class="p-2 text-slate-800 hover:text-blue-600" aria-label="Open menu">
+                            <i id="menu-open-icon" data-lucide="menu" class="w-7 h-7"></i>
+                            <i id="menu-close-icon" data-lucide="x" class="w-7 h-7 hidden"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-white z-40 transition-opacity duration-300 ease-in-out opacity-0">
+        <div class="flex flex-col items-center justify-center h-full p-8 text-center">
+            <nav class="flex flex-col">
+                <a href="index.html#services" class="mobile-nav-link text-3xl font-bold text-slate-800 mb-8 hover:text-blue-600 transition-colors">Services</a>
+                <a href="/product-labs.html" class="mobile-nav-link text-3xl font-bold text-blue-600 mb-8 transition-colors">AI Product Labs</a>
+                <a href="index.html#why-us" class="mobile-nav-link text-3xl font-bold text-slate-800 mb-8 hover:text-blue-600 transition-colors">Why Us</a>
+                <a href="index.html#projects" class="mobile-nav-link text-3xl font-bold text-slate-800 mb-8 hover:text-blue-600 transition-colors">Projects</a>
+                <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/vecminds/vecminds-1-1'});return false;" class="mobile-nav-link mt-4 bg-blue-600 text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:bg-blue-700 transition-all">
+                    Book a Discovery Call
+                </a>
+            </nav>
+        </div>
+    </div>
+
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero" class="relative pt-40 pb-24 md:pt-48 md:pb-32 flex items-center justify-center overflow-hidden bg-[#f7f9fb]">
+            <div id="hero-background" class="absolute inset-0 z-0"></div>
+            <div class="relative z-10 max-w-4xl mx-auto text-center px-4">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 tracking-tighter">
+                    🚀 From Idea to <span class="gradient-text"> Ideal MVP </span> in Weeks, Not Months
+                </h1>
+                <p class="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-slate-600">
+                    Vecminds Product Labs helps founders and teams turn sharp ideas into functional AI-native MVPs in 4–8 weeks—built lean, scalable, and ready to validate.
+                </p>
+                <div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/vecminds/vecminds-1-1'});return false;" class="bg-blue-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-blue-700 transition-all transform hover:scale-105">
+                        Book Discovery Call
+                    </a>
+                    <a href="#process" class="bg-white text-slate-700 font-semibold px-6 py-3 rounded-full shadow-md border border-slate-200 hover:bg-slate-100 transition-all transform hover:scale-105">
+                        See How We Work
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY PRODUCT LABS EXISTS -->
+        <section class="section-padding bg-white">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Why Product Labs Exists</h2>
+                </div>
+                <!-- Removed items-start to allow grid items to stretch to equal height -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="bg-red-50 p-8 rounded-xl border border-red-200 flex flex-col">
+                        <h3 class="text-xl font-semibold text-red-800 mb-4">Most MVPs fail from:</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i data-lucide="x-circle" class="w-5 h-5 text-red-500 mr-3 mt-1 flex-shrink-0"></i>
+                                <span class="text-slate-700"><strong>Overbuilding before validation</strong></span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="x-circle" class="w-5 h-5 text-red-500 mr-3 mt-1 flex-shrink-0"></i>
+                                <span class="text-slate-700"><strong>Slow, scattered development loops</strong></span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="x-circle" class="w-5 h-5 text-red-500 mr-3 mt-1 flex-shrink-0"></i>
+                                <span class="text-slate-700"><strong>“AI as an afterthought”</strong> instead of a core</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-green-50 p-8 rounded-xl border border-green-200 flex flex-col">
+                        <h3 class="text-xl font-semibold text-green-800 mb-4">We solve this by:</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0"></i>
+                                <span class="text-slate-700"><strong>Clarity →</strong> Nail one job-to-be-done, strip noise</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0"></i>
+                                <span class="text-slate-700"><strong>AI-native Design →</strong> Agents, LLMs, automation as first-class citizens</span>
+                            </li>
+                             <li class="flex items-start">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0"></i>
+                                <span class="text-slate-700"><strong>Speed →</strong> Weekly milestones, working demo in 2 weeks</span>
+                            </li>
+                             <li class="flex items-start">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0"></i>
+                                <span class="text-slate-700"><strong>Ownership →</strong> You own code, infra, and IP</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHO WE BUILD FOR -->
+        <section id="who-we-help" class="section-padding bg-slate-50">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Who We Build For</h2>
+                    <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">We partner with ambitious builders who need to move fast and validate ideas with real, working software.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition-all">
+                        <i data-lucide="rocket" class="w-10 h-10 text-blue-600 mb-4"></i>
+                        <h3 class="font-bold text-lg text-slate-900">Early-Stage Founders</h3>
+                        <p class="text-slate-600 mt-2">Need a working MVP to test, raise, or pitch investors.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition-all">
+                        <i data-lucide="zap" class="w-10 h-10 text-blue-600 mb-4"></i>
+                        <h3 class="font-bold text-lg text-slate-900">Startups & Scaleups</h3>
+                        <p class="text-slate-600 mt-2">Want to spin up AI-powered pilots fast without derailing the core roadmap.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition-all">
+                        <i data-lucide="building-2" class="w-10 h-10 text-blue-600 mb-4"></i>
+                        <h3 class="font-bold text-lg text-slate-900">Innovation Teams</h3>
+                        <p class="text-slate-600 mt-2">Need internal AI tools to prove business impact and drive adoption.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- WHAT WE BUILD -->
+        <section id="what-we-build" class="section-padding bg-white">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">What We Build</h2>
+                    <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">Our focus is on functional, AI-native applications that deliver immediate value.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="base-card group bg-slate-50 p-8 rounded-xl">
+                        <i data-lucide="layout-dashboard" class="w-8 h-8 text-blue-600 mb-3"></i>
+                        <h3 class="font-semibold text-xl text-slate-900 mb-2">AI-native SaaS MVPs</h3>
+                        <p class="text-slate-600">Includes auth, billing, dashboards, and core AI workflows.</p>
+                    </div>
+                    <div class="base-card group bg-slate-50 p-8 rounded-xl">
+                        <i data-lucide="bot" class="w-8 h-8 text-blue-600 mb-3"></i>
+                        <h3 class="font-semibold text-xl text-slate-900 mb-2">AI Agents</h3>
+                        <p class="text-slate-600">Automation for sales, operations, and customer support.</p>
+                    </div>
+                    <div class="base-card group bg-slate-50 p-8 rounded-xl">
+                        <i data-lucide="sliders-horizontal" class="w-8 h-8 text-blue-600 mb-3"></i>
+                        <h3 class="font-semibold text-xl text-slate-900 mb-2">Internal Ops Tools</h3>
+                        <p class="text-slate-600">AI-enhanced reporting and internal workflow automation.</p>
+                    </div>
+                    <div class="base-card group bg-slate-50 p-8 rounded-xl">
+                        <i data-lucide="database-zap" class="w-8 h-8 text-blue-600 mb-3"></i>
+                        <h3 class="font-semibold text-xl text-slate-900 mb-2">AI-on-Your-Data Apps</h3>
+                        <p class="text-slate-600">Knowledge retrieval and decision support systems.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OUTCOMES -->
+        <section class="section-padding bg-slate-50">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Outcomes You Can Expect</h2>
+                </div>
+                <div class="space-y-10 text-lg max-w-2xl mx-auto">
+                    <!-- Item 1 -->
+                    <div class="flex items-start space-x-6">
+                        <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                            <i data-lucide="rocket" class="w-7 h-7 text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-slate-800 text-xl">Functional MVP</h3>
+                            <p class="text-slate-600 mt-1">A working product deployed to production, ready for user feedback.</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                     <div class="flex items-start space-x-6">
+                        <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                            <i data-lucide="bot" class="w-7 h-7 text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-slate-800 text-xl">Improved Workflows</h3>
+                            <p class="text-slate-600 mt-1">AI agents and flows that deliver tangible efficiency gains.</p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                     <div class="flex items-start space-x-6">
+                        <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                            <i data-lucide="code-2" class="w-7 h-7 text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-slate-800 text-xl">Extensible Architecture</h3>
+                            <p class="text-slate-600 mt-1">A clean, scalable codebase ready for future development.</p>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                     <div class="flex items-start space-x-6">
+                        <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                            <i data-lucide="map" class="w-7 h-7 text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-slate-800 text-xl">Clear Roadmap</h3>
+                            <p class="text-slate-600 mt-1">A strategic plan for developing your product to v1.0 and beyond.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESS -->
+        <section id="process" class="section-padding bg-white">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">The Product Labs Process</h2>
+                    <p class="mt-4 text-lg text-slate-600">Fast, transparent, and relentlessly focused on shipping.</p>
+                </div>
+                <div class="space-y-8 max-w-2xl mx-auto">
+                    <!-- Step 1 -->
+                    <div class="flex items-start space-x-6">
+                        <div class="flex-shrink-0 text-blue-600 font-bold bg-blue-100 rounded-lg p-3 w-24 text-center">Wk 0-1</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-slate-900">Discovery & Scope</h3>
+                            <p class="mt-1 text-slate-600">Define the core problem, success metrics, and a lean roadmap.</p>
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="flex items-start space-x-6">
+                        <div class="flex-shrink-0 text-blue-600 font-bold bg-blue-100 rounded-lg p-3 w-24 text-center">Wk 2</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-slate-900">Blueprint & Prototype</h3>
+                            <p class="mt-1 text-slate-600">Solidify UI flows with a clickable prototype. You see it before we build it.</p>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="flex items-start space-x-6">
+                        <div class="flex-shrink-0 text-blue-600 font-bold bg-blue-100 rounded-lg p-3 w-24 text-center">Wk 3-6</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-slate-900">Build Sprints</h3>
+                            <p class="mt-1 text-slate-600">We ship core features, AI workflows, and key integrations in weekly cycles.</p>
+                        </div>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="flex items-start space-x-6">
+                        <div class="flex-shrink-0 text-blue-600 font-bold bg-blue-100 rounded-lg p-3 w-24 text-center">Wk 7</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-slate-900">Test & Tighten</h3>
+                            <p class="mt-1 text-slate-600">Focus on QA, implementing guardrails, and setting up monitoring.</p>
+                        </div>
+                    </div>
+                    <!-- Step 5 -->
+                    <div class="flex items-start space-x-6">
+                        <div class="flex-shrink-0 text-blue-600 font-bold bg-blue-100 rounded-lg p-3 w-24 text-center">Wk 8</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-slate-900">Launch & Handover</h3>
+                            <p class="mt-1 text-slate-600">Production deployment, documentation, and a clear growth plan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PACKAGES -->
+        <section id="packages" class="section-padding bg-slate-50">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Packages</h2>
+                    <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">Fixed-scope pricing for total transparency. Determined after our initial discovery call.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Package 1 -->
+                    <div class="base-card bg-white p-8 rounded-xl border border-slate-200 flex flex-col">
+                        <h3 class="font-bold text-2xl text-slate-900">⚡ Sprint MVP</h3>
+                        <p class="text-slate-600 mt-2 mb-4">4 Weeks</p>
+                        <p class="flex-grow">A single, strong use case designed to be validation-ready. Perfect for testing a core hypothesis.</p>
+                    </div>
+                    <!-- Package 2 -->
+                    <div class="base-card bg-white p-8 rounded-xl border-2 border-blue-600 flex flex-col relative shadow-xl">
+                        <div class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2">
+                            <span class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Most Popular</span>
+                        </div>
+                        <h3 class="font-bold text-2xl text-slate-900">🚀 Founders’ MVP</h3>
+                        <p class="text-slate-600 mt-2 mb-4">6 Weeks</p>
+                        <p class="flex-grow">A SaaS-ready application with 2-3 core features and a primary AI workflow.</p>
+                    </div>
+                    <!-- Package 3 -->
+                    <div class="base-card bg-white p-8 rounded-xl border border-slate-200 flex flex-col">
+                        <h3 class="font-bold text-2xl text-slate-900">🏢 AI-Ops Pilot</h3>
+                        <p class="text-slate-600 mt-2 mb-4">6-8 Weeks</p>
+                        <p class="flex-grow">One or more internal agents designed to automate specific, high-impact business workflows.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY VECMINDS -->
+        <section id="why-us" class="section-padding bg-white">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Why Build with Vecminds?</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12">
+                     <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-lg bg-blue-100 text-blue-600"><i data-lucide="brain-circuit" class="w-6 h-6"></i></div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-slate-900">AI-Native Build Partner</h3>
+                            <p class="mt-1 text-slate-600">We don't just add "AI features." We architect your entire MVP around intelligent workflows.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-lg bg-blue-100 text-blue-600"><i data-lucide="users" class="w-6 h-6"></i></div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-slate-900">Small, Agile Team</h3>
+                            <p class="mt-1 text-slate-600">You get direct access to expert engineers, ensuring maximum speed and focus.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-lg bg-blue-100 text-blue-600"><i data-lucide="lock" class="w-6 h-6"></i></div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-slate-900">You Own Everything</h3>
+                            <p class="mt-1 text-slate-600">The IP, the code, and the infrastructure are 100% yours from day one.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-lg bg-blue-100 text-blue-600"><i data-lucide="trending-up" class="w-6 h-6"></i></div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-slate-900">Proven Track Record</h3>
+                            <p class="mt-1 text-slate-600">We have a history of building and scaling SaaS and AI tools for successful companies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section id="faq" class="section-padding bg-slate-50">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Frequently Asked Questions</h2>
+                </div>
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-white rounded-lg border border-slate-200">
+                        <button class="accordion-button flex justify-between items-center w-full p-5 text-left font-semibold text-slate-800">
+                            How fast can you build an MVP?
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-5 pt-0 text-slate-600">Most MVPs are shipped in 4–8 weeks. You’ll see working demos as early as Week 2, so progress is always transparent.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-white rounded-lg border border-slate-200">
+                        <button class="accordion-button flex justify-between items-center w-full p-5 text-left font-semibold text-slate-800">
+                            What exactly is an MVP?
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-5 pt-0 text-slate-600">An MVP is a lean, functional version of your product idea, built with just the core features needed to validate with users, investors, or teams. It’s not just a prototype—it’s something real people can actually use.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-white rounded-lg border border-slate-200">
+                        <button class="accordion-button flex justify-between items-center w-full p-5 text-left font-semibold text-slate-800">
+                            Do I need a complete idea or product spec?
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-5 pt-0 text-slate-600">No. Even if you only have a vision or concept, we guide you through a discovery and scoping sprint to define features, workflows, and success metrics.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 4 -->
+                    <div class="bg-white rounded-lg border border-slate-200">
+                        <button class="accordion-button flex justify-between items-center w-full p-5 text-left font-semibold text-slate-800">
+                            Who owns the code and IP?
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-5 pt-0 text-slate-600">You do. 100% ownership of the codebase, infrastructure, and intellectual property stays with you. Vecminds is your build partner—not a lock-in vendor.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 5 -->
+                    <div class="bg-white rounded-lg border border-slate-200">
+                        <button class="accordion-button flex justify-between items-center w-full p-5 text-left font-semibold text-slate-800">
+                            How much will it cost?
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-5 pt-0 text-slate-600">We work on fixed-scope, fixed-timeline packages. After discovery, you’ll receive a clear proposal—no hourly surprises, just transparent deliverables.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 6 -->
+                    <div class="bg-white rounded-lg border border-slate-200">
+                        <button class="accordion-button flex justify-between items-center w-full p-5 text-left font-semibold text-slate-800">
+                            Can you support after launch?
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-5 pt-0 text-slate-600">Yes. We offer handover plus optional growth sprints to extend features, scale AI capabilities, and help prepare for fundraising.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA BLOCK -->
+        <section id="contact" class="bg-blue-700">
+            <div class="max-w-4xl mx-auto text-center section-padding">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight">
+                    🎯 Ready to bring your idea to life as an AI-native MVP?
+                </h2>
+                <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/vecminds/vecminds-1-1'});return false;" class="mt-8 inline-block bg-white text-blue-700 font-bold px-8 py-4 rounded-full shadow-xl hover:bg-slate-100 transition-all transform hover:scale-105">
+                    Book a 15-min Discovery Call
+                </a>
+                <p class="mt-4 text-blue-200">Response in &lt;24 hours. No fluff. Just outcomes.</p>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- UNIFIED FOOTER -->
+    <footer class="bg-slate-900 text-white">
+        <!-- About Section -->
+        <section id="about" class="py-16 px-4 sm:px-6 lg:px-8">
+             <div class="max-w-4xl mx-auto text-center">
+                <h3 class="text-2xl font-bold">We’re engineers, not consultants.</h3>
+                <p class="mt-4 text-lg text-slate-400 max-w-2xl mx-auto">
+                    We build software with grit, speed, and clarity. Vecminds was founded by a tech operator who believes the future of software is intelligent, custom, and fast.
+                </p>
+                <p class="mt-8 text-xl font-semibold text-blue-400">Agile Minds. Relentless Solutions.</p>
+            </div>
+        </section>
+
+        <!-- Main Footer -->
+        <div class="border-t border-slate-800">
+            <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                    <div class="text-center md:text-left">
+                        <p class="text-sm text-slate-400">&copy; 2025 Vecminds Technologies. All rights reserved.</p>
+                    </div>
+                    <div class="flex items-center space-x-6">
+                        <a href="mailto:info@vecminds.com" class="text-sm text-slate-400 hover:text-white">info [at] vecminds [dot] com</a>
+                        <a href="https://www.linkedin.com/company/vecminds/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white" aria-label="Visit our LinkedIn page">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://x.com/VecMinds/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white" aria-label="Visit our X (formerly Twitter) page">
+                            <i data-lucide="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://instagram.com/vecminds/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white" aria-label="Visit our Instagram page">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Centralized JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
